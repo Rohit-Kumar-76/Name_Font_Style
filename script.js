@@ -1,5 +1,5 @@
 gsap.to('#container', {
-    y: 20,
+    y: 5,
     scale: 1,
 
 })
