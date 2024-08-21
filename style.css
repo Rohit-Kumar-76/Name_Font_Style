@@ -1,0 +1,74 @@
+#main {
+    width: 100%;
+    height: 100vh;
+    background-color: #626262;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 60%;
+    min-height: 20%;
+    /* Set a minimum height to ensure the container isn't too small */
+    background-color: #fff;
+    padding: 20px;
+    /* Add padding for better spacing */
+    box-sizing: border-box;
+    /* Ensure padding is included in width and height calculations */
+    overflow: hidden;
+    /* Ensure no scrollbar appears if text overflows */
+}
+
+#container h1 {
+    font-size: 10vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 1;
+    padding: 30px 20px;
+    margin: 0;
+    /* Remove default margin for more control */
+    word-wrap: break-word;
+    /* Ensure long names wrap within the container */
+}
+
+form {
+    padding: 5px;
+    background-color: aqua;
+    text-align: center;
+    /* Center align form elements */
+    margin-bottom: 20px;
+    /* Space between form and h1 */
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    margin-right: 10px;
+    /* Space between input and button */
+    width: 200px;
+    /* Set a fixed width for input */
+    font-size: 16px;
+    /* Ensure text is readable */
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+    padding: 5px;
+    background-color: #6f58f6;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Add a pointer cursor for better UX */
+    border: none;
+    /* Remove border for a cleaner look */
+}
