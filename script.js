@@ -1,8 +1,4 @@
-gsap.to('#container', {
-    y: 5,
-    scale: 1,
 
-})
 let colorInterval; // Variable to store the interval ID
 
 // Function to generate a random color

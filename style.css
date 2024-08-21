@@ -1,6 +1,6 @@
 #main {
     width: 100%;
-    height: 90vh;
+    height: 75vh;
     background-color: #626262;
     display: flex;
     justify-content: center;
@@ -48,6 +48,8 @@ header h1 {
 form {
     padding: 5px;
     background-color: aqua;
+    position: relative;
+    overflow: hidden;
     text-align: center;
     /* Center align form elements */
     margin-bottom: 20px;
@@ -84,4 +86,64 @@ button {
     /* Add a pointer cursor for better UX */
     border: none;
     /* Remove border for a cleaner look */
+}
+
+footer {
+    text-align: center;
+    font-family: serif;
+    font-weight: bold;
+    border-bottom: 2px solid gay;
+    background-color: #9f9a9a;
+    padding: 2px;
+}
+
+
+@media (max-width: 768px) {
+    #main {
+        display: block;
+    }
+
+    #container {
+        width: 100%;
+        min-height: 100%;
+        /* Set a minimum height to ensure the container isn't too small */
+        background-color: #fff;
+        padding: 5px;
+        /* Add padding for better spacing */
+        box-sizing: border-box;
+        /* Ensure padding is included in width and height calculations */
+        overflow: hidden;
+        /* Ensure no scrollbar appears if text overflows */
+    }
+
+    header {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #container h1 {
+        font-size: 10vw;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        line-height: 1;
+        padding: 20px;
+        margin: 0;
+        /* Remove default margin for more control */
+        word-wrap: break-word;
+        /* Ensure long names wrap within the container */
+    }
+
+
+    button,
+    label {
+        width: 100%;
+        margin: 2px;
+        padding: 3px;
+        height: 30px;
+    }
+
+    input {
+        width: 97%;
+        margin: 3px;
+    }
 }
